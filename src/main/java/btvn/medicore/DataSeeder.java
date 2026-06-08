@@ -32,7 +32,7 @@ public class DataSeeder implements CommandLineRunner {
         User admin = User.builder()
                 .username("admin")
                 .password(passwordEncoder.encode("123456"))
-                .fullName("Nguyễn Quản Trị")
+                .fullName("Nguyễn Văn Admin")
                 .active(true)
                 .roles(List.of(adminRole))
                 .build();
@@ -41,7 +41,7 @@ public class DataSeeder implements CommandLineRunner {
         User doctor = User.builder()
                 .username("doctor")
                 .password(passwordEncoder.encode("123456"))
-                .fullName("Bác sĩ Phong Đào")
+                .fullName("Bác sĩ Văn B")
                 .active(true)
                 .roles(List.of(doctorRole))
                 .build();
@@ -50,7 +50,7 @@ public class DataSeeder implements CommandLineRunner {
         User patient = User.builder()
                 .username("thanh")
                 .password(passwordEncoder.encode("123456"))
-                .fullName("Nguyễn Tiến Thành")
+                .fullName("Nguyễn Văn C")
                 .active(true)
                 .roles(List.of(patientRole))
                 .build();
@@ -61,7 +61,7 @@ public class DataSeeder implements CommandLineRunner {
         System.out.println("HỆ THỐNG MEDICORE API ĐÃ TỰ ĐỘNG BƠM TÀI KHOẢN MẪU:");
         System.out.println("Tài khoản ADMIN  : admin  | pass: 123456");
         System.out.println("Tài khoản DOCTOR : doctor | pass: 123456");
-        System.out.println("Tài khoản PATIENT: thanh  | pass: 123456");
+        System.out.println("Tài khoản PATIENT: vanC   | pass: 123456");
         System.out.println("=============================================================");
     }
 }
